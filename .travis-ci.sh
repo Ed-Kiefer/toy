@@ -1,5 +1,5 @@
 #
-# Toy - first attempt at .travis-ci.sh
+# Toy - second attempt at .travis-ci.sh
 #
 OPAM_DEPENDS="ocamlfind ounit re"
 case "$OCAML_VERSION,$OPAM_VERSION" in
