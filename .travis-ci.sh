@@ -8,8 +8,8 @@ case "$OCAML_VERSION,$OPAM_VERSION" in
 esac
 
 echo "yes" | sudo add-apt-repository ppa:$ppa
-apt-get update -qq
-apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam
+sudo apt-get update -qq
+sudo apt-get install -qq ocaml ocaml-native-compilers camlp4-extra opam
 export OPAMYES=1
 export MERLIN_TRAVIS=true
 opam init
