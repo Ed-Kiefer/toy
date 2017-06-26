@@ -10,3 +10,5 @@ Executable toy
   Path:       .
   BuildTools: ocamlbuild
   MainIs:     toy.ml
+  CompiledObject: native
+
