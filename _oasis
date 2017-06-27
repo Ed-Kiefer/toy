@@ -11,5 +11,6 @@ Executable toy
   BuildTools: ocamlbuild
   MainIs:     toy.ml
   CompiledObject: byte
-Test test
+Test "test_toy"
+  TestTools: toy
   Command: ./toy.byte
