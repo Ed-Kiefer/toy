@@ -1,0 +1,20 @@
+opam-version: "1.2"
+version: "0.1"
+maintainer: "Ed Kiefer <ed.h.kiefer@gmail.com>"
+authors: "Ed Kiefer <ed.h.kiefer@gmail.com>"
+homepage: ""
+bug-reports: ""
+license: "LGPL"
+dev-repo: ""
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
+build-test: [
+  [make "test"]
+]
+remove: ["ocamlfind" "remove" "Toy"]
+depends: [
+  "ocamlfind" {build}
+]
