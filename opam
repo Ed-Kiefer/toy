@@ -5,7 +5,7 @@ authors: "Ed Kiefer <ed.h.kiefer@gmail.com>"
 homepage: ""
 bug-reports: ""
 license: "LGPL"
-dev-repo: "github.com/Ed-Kiefer/toy"
+dev-repo: "github.com/Ed-Kiefer/toy.git"
 build: [
   ["./configure" "--prefix=%{prefix}%"]
   [make]
