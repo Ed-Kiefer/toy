@@ -1,16 +1,19 @@
 OASISFormat: 0.4
-Name:        "toy"
+Name:        toy
 Version:     0.1
 Synopsis:    Toy program which changes behavior depending on an environment
   variable value MERLIN_TRAVIS
 Authors:     Ed Kiefer
 License:     LGPL
-Plugins:     META (0.4), DevFiles (0.4)
+Plugins:     META (0.4)
+BuildTools:
+  ocamlbuild
 Executable toy
+  Build: true
   Path:       .
   BuildTools: ocamlbuild
   MainIs:     toy.ml
   CompiledObject: byte
-Test "test_toy"
+Test test_toy
   TestTools: toy
   Command: ./toy.byte
