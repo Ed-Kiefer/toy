@@ -6,7 +6,7 @@ homepage: "github.com/Ed-Kiefer/toy"
 license: "LGPL"
 dev-repo: "github.com/Ed-Kiefer/toy.git"
 build: [
-  ["./configure -configure --enable-tests" "--prefix=%{prefix}%"]
+  ["./configure" "configure --enable-tests" "--prefix=%{prefix}%"]
   [make]
 ]
 install: [make "install"]
