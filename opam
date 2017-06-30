@@ -16,4 +16,5 @@ build-test: [
 remove: ["ocamlfind" "remove" "toy"]
 depends: [
   "ocamlfind" {build}
+  "opam" {build}
 ]
