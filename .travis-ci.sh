@@ -5,5 +5,5 @@
 export OPAMYES=1
 export MERLIN_TRAVIS=true
 export CONFIGUREFLAGS=--enable-tests
-
+export OPAMBUILDTEST=true
 
