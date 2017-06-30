@@ -6,7 +6,7 @@ homepage: "github.com/Ed-Kiefer/toy"
 license: "LGPL"
 dev-repo: "github.com/Ed-Kiefer/toy.git"
 build: [
-  ["./configure"  "--prefix=%{prefix}%"]
+  ["./configure"  "--enable-tests" "--prefix=%{prefix}%"]
   [make]
 ]
 install: [make "install"]
@@ -16,5 +16,5 @@ build-test: [
 remove: ["ocamlfind" "remove" "toy"]
 depends: [
   "ocamlfind" {build}
-  "opam" {build}
+  "oasis" {build}
 ]
